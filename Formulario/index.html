@@ -20,60 +20,60 @@
     </style>
 </head>
 <body>
-    <h1>Formulario — Ejemplos de tipos de input</h1>
+    <h1>Form — Example of input types</h1>
 
     <form id="demoForm" novalidate>
         <fieldset>
-            <legend>Información personal</legend>
+            <legend>Personal Information</legend>
             <div class="row">
                 <div>
-                    <label for="fullname">Nombre completo</label>
+                    <label for="fullname">Name</label>
                     <input id="fullname" name="fullname" type="text" placeholder="Ej: Ana Pérez" required />
                 </div>
                 <div>
-                    <label for="email">Correo electrónico</label>
+                    <label for="email">Email</label>
                     <input id="email" name="email" type="email" placeholder="ejemplo@dominio.com" required />
                 </div>
             </div>
 
             <div class="row">
                 <div>
-                    <label for="phone">Teléfono</label>
+                    <label for="phone">Phone Number</label>
                     <input id="phone" name="phone" type="tel" placeholder="+34 600 123 456" pattern="^\+?[0-9\s\-()]{6,}$" />
                 </div>
                 <div>
-                    <label for="website">Sitio web</label>
+                    <label for="website">Web Site</label>
                     <input id="website" name="website" type="url" placeholder="https://..." />
                 </div>
             </div>
 
-            <label for="bio">Biografía (textarea)</label>
+            <label for="bio">Biography (textarea)</label>
             <textarea id="bio" name="bio" rows="3" placeholder="Breve descripción"></textarea>
         </fieldset>
 
         <fieldset>
-            <legend>Preferencias y opciones</legend>
+            <legend>Preferences and options</legend>
 
             <div class="row">
                 <div>
-                    <label for="age">Edad</label>
+                    <label for="age">Age</label>
                     <input id="age" name="age" type="number" min="0" max="120" />
                 </div>
                 <div>
-                    <label for="rating">Satisfacción (0-10)</label>
+                    <label for="rating">Satisfaction (0-10)</label>
                     <input id="rating" name="rating" type="range" min="0" max="10" step="1" value="5" />
                 </div>
             </div>
 
-            <label for="favcolor">Color favorito</label>
+            <label for="favcolor">Favorite Color</label>
             <input id="favcolor" name="favcolor" type="color" value="#3b82f6" />
 
-            <label for="birth">Fecha de nacimiento</label>
+            <label for="birth">Birthdate</label>
             <input id="birth" name="birth" type="date" />
 
             <div class="row">
                 <div>
-                    <label>Género</label>
+                    <label>Gender</label>
                     <div class="controls">
                         <label><input type="radio" name="gender" value="female" /> Femenino</label>
                         <label><input type="radio" name="gender" value="male" /> Masculino</label>
@@ -82,7 +82,7 @@
                 </div>
 
                 <div>
-                    <label>Aficiones</label>
+                    <label>Hobbies</label>
                     <div class="controls">
                         <label><input type="checkbox" name="hobby" value="music" /> Música</label>
                         <label><input type="checkbox" name="hobby" value="sports" /> Deportes</label>
@@ -91,9 +91,9 @@
                 </div>
             </div>
 
-            <label for="country">País</label>
+            <label for="country">Countries</label>
             <select id="country" name="country">
-                <option value="">-- Selecciona --</option>
+                <option value="">-- Select --</option>
                 <option value="es">España</option>
                 <option value="mx">México</option>
                 <option value="us">Estados Unidos</option>
@@ -102,36 +102,36 @@
         </fieldset>
 
         <fieldset>
-            <legend>Archivos y datos técnicos</legend>
+            <legend>Files and technical data </legend>
 
-            <label for="avatar">Subir avatar (imagen)</label>
+            <label for="avatar">Upload avatar (image)</label>
             <input id="avatar" name="avatar" type="file" accept="image/*" />
 
-            <label for="hiddenToken">Token oculto (hidden)</label>
+            <label for="hiddenToken">Hidden Token (hidden)</label>
             <input id="hiddenToken" name="token" type="hidden" value="abc123" />
 
             <div class="row">
                 <div>
-                    <label for="datetime">Fecha y hora local</label>
+                    <label for="datetime">Local date and time</label>
                     <input id="datetime" name="datetime" type="datetime-local" />
                 </div>
                 <div>
-                    <label for="week">Semana</label>
+                    <label for="week">Week</label>
                     <input id="week" name="week" type="week" />
                 </div>
             </div>
         </fieldset>
 
         <div class="controls">
-            <button type="submit">Enviar</button>
-            <button type="reset">Restablecer</button>
+            <button type="submit">Send</button>
+            <button type="reset">Cancel</button>
         </div>
 
-        <p class="small">La demo evita el envío real y muestra los datos en la vista previa.</p>
+        <p class="small">This demo avoid to send real way and shows the preview data.</p>
 
     </form>
 
-    <h2>Vista previa (JSON)</h2>
+    <h2>Preview (JSON)</h2>
     <pre id="output">{}</pre>
 
     <script>
